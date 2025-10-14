@@ -1,0 +1,37 @@
+unknown:
+  title: "Build failed: unknown cause"
+  tips:
+    - "Review the failing job logs to identify the first error."
+    - "Re-run the job with increased verbosity if needed."
+
+test-failure:
+  title: "Tests are failing"
+  tips:
+    - "Run tests locally to reproduce: pytest -q"
+    - "Check assertion messages and stack traces for the failing test."
+    - "Ensure fixtures and test data are correctly set up."
+
+dependency-error:
+  title: "Dependency resolution/import error"
+  tips:
+    - "Verify required packages are listed in requirements and correctly pinned."
+    - "Ensure the module path is correct and package is installed in the job."
+    - "Consider clearing caches and reinstalling dependencies."
+
+lint-error:
+  title: "Linting errors detected"
+  tips:
+    - "Run lint locally (e.g., ruff, flake8, or pylint) and fix reported issues."
+    - "Consider enabling autofix if available."
+
+build-error:
+  title: "Build step failed"
+  tips:
+    - "Inspect compiler/build tool errors for missing headers or libraries."
+    - "Install required system dependencies before building."
+
+timeout:
+  title: "Job timed out"
+  tips:
+    - "Optimize long-running steps or split into smaller jobs."
+    - "Use caching or parallelization to reduce runtime." 
