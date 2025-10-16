@@ -24,4 +24,4 @@ def test_classifies_dependency_error():
     categories = [r.category for r in results]
     assert "dependency-error" in categories
     # test comment
-    b
+  
